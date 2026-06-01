@@ -1,3 +1,8 @@
+mod init;
+mod kernel;
+mod shell;
+
 fn main() {
-    println!("Hello, DFOS!");
+    kernel::boot();
+    init::start();
 }
